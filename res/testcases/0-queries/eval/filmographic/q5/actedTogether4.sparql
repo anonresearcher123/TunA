@@ -1,0 +1,13 @@
+PREFIX mdb:<http://data.linkedmdb.org/resource/movie/>
+PREFIX foaf:<http://xmlns.com/foaf/0.1/>
+PREFIX purl:<http://purl.org/dc/terms/>
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?name
+WHERE
+{
+    ?movie a mdb:film .
+    ?movie mdb:actor <http://data.linkedmdb.org/resource/actor/43265> .
+    ?movie mdb:actor ?actor .
+    ?actor foaf:name ?name .
+}
