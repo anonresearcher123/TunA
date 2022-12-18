@@ -17,8 +17,8 @@ import java.util.List;
 
 public class TunaFile {
     static String file = "./res/testcases/query.sparql";
-    static String fsLabel = "testFederation1";
-    static String dbLabel = "checked2";
+    static String fsLabel = "evalF1";
+    static String dbLabel = "checked";
 
     public static void main(String[] args) {
         Configuration config = Configuration.getInstance();

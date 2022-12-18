@@ -21,7 +21,7 @@ import java.nio.file.Paths;
 import java.util.LinkedList;
 import java.util.List;
 
-public class QueryTransformationTest {
+public class TransformationTest {
     static boolean printQueries = false;
     static boolean printResult = false;
     static String scenario = "checked";

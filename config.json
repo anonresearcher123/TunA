@@ -13,11 +13,6 @@
       "source": "E:\\Databases\\sample_dbs\\dblp_with_gaps\\dblp_with_gaps.nt"
     },
     {
-      "label": "checked2",
-      "index": "E:\\Databases\\sample_dbs\\dblp_with_gaps_new\\tdb",
-      "source": "E:\\Databases\\sample_dbs\\dblp_with_gaps_new\\dblp_with_gaps.nt"
-    },
-    {
       "label": "testing",
       "index": "E:\\Databases\\sample_dbs\\hose_schenkel_gaps\\tdb",
       "source": "E:\\Databases\\sample_dbs\\hose_schenkel_gaps\\hose_schenkel_gaps.nt"

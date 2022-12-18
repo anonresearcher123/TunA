@@ -20,7 +20,7 @@ import java.nio.file.Paths;
 import java.util.LinkedList;
 import java.util.List;
 
-public class QueryPreConditionTest {
+public class PreConditionTest {
     static boolean printQueries = false;
     static String scenario = "checked";
     static TestSetting testConfig = Configuration.getInstance().getTestSettings(Setting.PRECONDITIONS,scenario);
