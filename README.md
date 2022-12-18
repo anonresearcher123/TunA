@@ -8,4 +8,4 @@ TunA is a query optimizer that is able to combine RESTful Web APIs and RDF KBs i
 ## Where to find the data sets used for the evaluation?
 For the evaluation we used as data sources the ones provided by [ETARA](https://github.com/anonresearcher123/ETARA) (an RDF version of dblp and data exports of the RESTful Web APIs from CrossRef, SciGraph and Semantic Scholar). Additionally, we created three tainted data sets, that contained erroneous data (i.e. incorrect titles, etc.) and removed information, e.g., titles and author names, from the dblp dataset. 
 
-[Download used data sets](#)
+[Download used data sets](shorturl.at/fgqV4)
