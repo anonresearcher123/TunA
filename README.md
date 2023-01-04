@@ -7,6 +7,8 @@ TunA is a query optimizer that is able to combine RESTful Web APIs and RDF KBs i
 In order to run TunA several configurations must be done first. First, clone the project and open it in an IDEA of your choice. Afterwards, three steps need to be done: (1) all local RDF databases that you want to query must be registered, (2) the function store (containing all alignments between the local used RDF databases and a set of APIs) must be configured and (3) you have to specify your queries and execute them.
 
 ### Configure local databases
+![database_config](https://user-images.githubusercontent.com/120786910/210595102-4378216a-69a7-4f48-b86b-e91dc1daa98c.JPG)
+
 ### Setting up a function store
 ### Running queries
 
