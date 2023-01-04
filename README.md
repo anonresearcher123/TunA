@@ -10,6 +10,7 @@ All configurations of TunA are done in the config file `config.json`.
 
 ### Configure local databases
 To add a database or change the location of a database, you must add or modify a JSON object of the following form in the databse array in the global configuration file `config.json`:
+
 ![database_config](https://user-images.githubusercontent.com/120786910/210595102-4378216a-69a7-4f48-b86b-e91dc1daa98c.JPG)
 
 ### Setting up a function store
