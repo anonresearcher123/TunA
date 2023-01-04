@@ -10,6 +10,8 @@ In order to run TunA several configurations must be done first. First, clone the
 ![database_config](https://user-images.githubusercontent.com/120786910/210595102-4378216a-69a7-4f48-b86b-e91dc1daa98c.JPG)
 
 ### Setting up a function store
+![functionstore_config](https://user-images.githubusercontent.com/120786910/210595508-1316e0ff-ca17-4140-a951-af99de29169e.JPG)
+
 ### Running queries
 
 ## Where to find the data sets used for the evaluation?
