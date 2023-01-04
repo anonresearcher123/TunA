@@ -13,4 +13,4 @@ In order to run TunA several configurations must be done first. First, clone the
 ## Where to find the data sets used for the evaluation?
 For the evaluation we used as data sources the ones provided by [ETARA](https://github.com/anonresearcher123/ETARA) (an RDF version of dblp and data exports of the RESTful Web APIs from CrossRef, SciGraph and Semantic Scholar). Additionally, we created three tainted data sets, that contained erroneous data (i.e. incorrect titles, etc.) and removed information, e.g., titles and author names, from the dblp dataset. 
 
-[Download used data sets](shorturl.at/fgqV4)
+[Download used data sets](https://shorturl.at/fgqV4)
