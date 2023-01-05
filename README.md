@@ -1,6 +1,8 @@
 # TunA: Tunable Query Optimizer for Web APIs and User Preferences
 
 ## What is TunA?
+To answer queries many query processors combine different SPARQL sources, e.g., various knowledge bases or APIs. RESTful Web APIs are rarely the focus of those systems as they come with many limitations, such as not being able to process SPARQL queries. Additionally, most existing approaches optimize their query plans only for performance, even though users often have additional preferences regarding coverage, reliability, or currency. In addition, data is often provided with different levels of quality so that not all sources should be trusted equally.
+
 TunA is a query optimizer that is able to combine RESTful Web APIs and RDF KBs in form of triple stores, tuning its (query) plans towards user preferences. Erroneous information from Web APIs is detected using a hierarchical agglomerative clustering. Our evaluation shows that TunA outperforms current state-of-the-art systems and is less vulnerable for erroneous information, even in settings where only unreliable sources are available
 
 ## How to run TunA?
@@ -94,6 +96,8 @@ Time Limit (ms): 5000
 Minimum Coverage: 0.7
 Minimum Reliability: 0.8
 ```
+
+Finally, before the query is executed, the user must specify their preferences (in terms of time limit, minimum required coverage, minimum required reliability). In the example above, the user has specified a maximum execution time of 5 seconds (measured in milliseconds). Furthermore, he requires a minimum coverage of 0.7 and a minimum reliability of 0.8.
 
 ## Where to find the data sets used for the evaluation?
 For the evaluation we used as data sources the ones provided by [ETARA](https://github.com/anonresearcher123/ETARA) (an RDF version of dblp and data exports of the RESTful Web APIs from CrossRef, SciGraph and Semantic Scholar). Additionally, we created three tainted data sets, that contained erroneous data (i.e. incorrect titles, etc.) and removed information, e.g., titles and author names, from the dblp dataset. 
