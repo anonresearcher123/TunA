@@ -10,8 +10,8 @@ In order to run TunA several configurations must be done first. First, clone the
 
 All configurations of TunA are done in the config file `config.json`.
 
-### Configure local databases
-To add a database or change the location of a database, you must add or modify a JSON object of the following form in the databse array in the global configuration file `config.json`:
+### Configure local databases and APIs
+To add a database or change the location of a database, you must add or modify a JSON object of the following form in the database array, named `databases`, in the global configuration file `config.json`:
 
 ```
 {
@@ -22,6 +22,25 @@ To add a database or change the location of a database, you must add or modify a
 ```
 
 The key `label` indicates the name of the database with which it can later be selected in order to make queries to it. The path to the triple store (in this case a triple database created by Apache Jena) or index is stored under `index`. It is also possible to specify a URL leading to the SPARQL endpoint of an RDF knwoledge base. Lastly, `source` stores the path to the source file (i.e., an .nt, .ttl, or other file).
+
+The procedure is similar for APIs, because these must also be defined in the configuration file `config.json`. For this purpose, an entry of the following form must be created in the section called `apis`:
+
+```
+{
+  "name": "Name of the API",
+  "label": "apiLabel",
+  "timeout": 500,
+  "format": "json",
+  "parameters": [
+    {
+      "name": "q",
+      "type": "https://dblp.org/rdf/schema-2020-07-01#Publication",
+      "relation": "http://www.wikidata.org/prop/direct/P356"
+    }
+  ],
+  "url": "http://www.example.com/work/title?doi={q}"
+}
+```
 
 ### Setting up a function store
 The configuration file `config.json` can be used to define the storage location for one or multiple sets of function definitions (also denoted as function store). 
@@ -43,7 +62,7 @@ In this example, three different function stores have been defined, namely `eval
 {
   "meta": {
     "database": "databaseName",
-    "api": "apiName",
+    "api": "apiLabel",
     "inputRelation": "http://www.wikidata.org/prop/direct/P356",
     "responseTime": 504,
     "responseProbability": 0.32
