@@ -40,8 +40,8 @@ In this example, three different function stores have been defined, namely `eval
 ```
 {
   "meta": {
-    "database": "sample_dblp",
-    "api": "a13",
+    "database": "databaseName",
+    "api": "apiName",
     "inputType": "https://dblp.org/rdf/schema-2020-07-01#Publication",
     "inputRelation": "http://www.wikidata.org/prop/direct/P356",
     "responseTime": 504,
