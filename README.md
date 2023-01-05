@@ -26,7 +26,36 @@ In the presented example above, the path to the function store is set to `res/fu
 
 In this example, three different function stores have been defined, namely `evalF1`, `evalF2` and `evalF3`. The function stores mentioned above contain a number of different function definitions, which map an API response to a knowledge base. In this case, a function definition is a JSON file, structured like the following example:
 
-![functionstore_config](https://user-images.githubusercontent.com/120786910/210595508-1316e0ff-ca17-4140-a951-af99de29169e.JPG)
+```
+{
+  "meta": {
+    "database": "sample_dblp",
+    "api": "a13",
+    "inputType": "https://dblp.org/rdf/schema-2020-07-01#Publication",
+    "inputRelation": "http://www.wikidata.org/prop/direct/P356",
+    "responseTime": 504,
+    "responseProbability": 0.32
+  },
+  "alignments": [
+    {
+      "reliability": 0.75,
+      "relation_path": [
+        {
+          "path": [
+            "https://dblp.org/rdf/schema-2020-07-01#title"
+          ]
+        }
+      ],
+      "api_path": [
+        "feed.entry.title"
+      ]
+    }
+  ]
+}
+
+```
+
+<!--- ![functionstore_config](https://user-images.githubusercontent.com/120786910/210595508-1316e0ff-ca17-4140-a951-af99de29169e.JPG) --->
 
 ### Running queries
 
