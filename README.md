@@ -67,7 +67,7 @@ In this example, three different function stores have been defined, namely `eval
 
 The first section, named `meta`, contains various information about the API and the response, modelled sub-graphs of the local database. The first fields `database` and `api` describe which API is modelled and with which local database it is aligned. The fields `responseTime` and `responseProbability` describe the average response time of the API and how likely it is that information can be returned for a requested entity. The field `inputRelation` describes the relation that points to a value (in this case a DOI) that must be used to request an API. In this example, a DOI (marked with the predicate P356) must be sent to the API in order to receive a response with information (i.e. title). 
 
-The second section, named `alignments`, contains ...
+The second section is named `alignments` and contains for each path in an API response (typically in JSON or XML) a mapping to the corresponding relation or predicate of the local database. If a path cannot be mapped because, for example, the information is not available locally, no mapping is specified. In the above example, the path `feed.entry.title`, which leads to the title of a publication, is mapped to the relation `dblp:title`. This way the query processor knows that the function definition can be used to find a missing title of a publication.
 
 ### Running queries
 
