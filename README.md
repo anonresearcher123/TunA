@@ -24,7 +24,12 @@ The key `label` indicates the name of the database with which it can later be se
 ### Setting up a function store
 The configuration file `config.json` can be used to define the storage location for one or multiple sets of function definitions (also denoted as function store). 
 
-```"functionstore": "res/functionstores/"```
+```
+{
+  "functionstore": "res/functionstores/",
+  ...
+}
+```
 
 In the presented example above, the path to the function store is set to `res/functionstore/`. In the specified folder, several sub-folders can be created (see the example below) with different function definitions in order to model different function stores.
 
