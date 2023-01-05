@@ -66,7 +66,7 @@ In this example, three different function stores have been defined, namely `eval
 
 ```
 
-<!--- ![functionstore_config](https://user-images.githubusercontent.com/120786910/210595508-1316e0ff-ca17-4140-a951-af99de29169e.JPG) --->
+The first section The first fields `database` and `api` describe which API is modelled and with which local database it is aligned. The fields `responseTime` and `responseProbability` describe the average response time of the API and how likely it is that information can be returned for a requested entity. The field `inputRelation` describes the relation that points to a value (in this case a DOI) that must be used to request an API. In this example, a DOI (marked with the predicate P356) must be sent to the API in order to receive a response with information (i.e., title). 
 
 ### Running queries
 
