@@ -70,6 +70,7 @@ The first section, named `meta`, contains various information about the API and 
 The second section is named `alignments` and contains for each path in an API response (typically in JSON or XML) a mapping to the corresponding relation or predicate of the local database. If a path cannot be mapped because, for example, the information is not available locally, no mapping is specified. In the above example, the path `feed.entry.title`, which leads to the title of a publication, is mapped to the relation `dblp:title`. This way the query processor knows that the function definition can be used to find a missing title of a publication.
 
 ### Running queries
+By executing the class `TunaConsole`, the query processor TunA is started. The user is then asked to specify the database to which he wants to send a query, to specify the function store to be used to fill in missing information in the query result and to specify his query. The user formulates the query in a file and saves it in the path `res/queries/`. The example below shows that the user submits a query `queryName.sparql` to the database `databaseName` with funciton store `functionStoreName`.
 
 ```
 ___________               _____   
@@ -82,9 +83,16 @@ ___________               _____
 -----------------------------
 Data Management
 -----------------------------
-Select Database: sample_dblp
-Select Function Store: evalF1
-Query File: query1.sparql
+Select Database: databaseName
+Select Function Store: functionStoreName
+Query File: queryName.sparql
+
+-----------------------------
+User Preferences
+-----------------------------
+Time Limit (ms): 5000
+Minimum Coverage: 0.7
+Minimum Reliability: 0.8
 ```
 
 ## Where to find the data sets used for the evaluation?
