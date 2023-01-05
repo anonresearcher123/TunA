@@ -71,6 +71,22 @@ The second section is named `alignments` and contains for each path in an API re
 
 ### Running queries
 
+```
+___________               _____   
+\__    ___/_ __  ____    /  _  \  
+  |    | |  |  \/    \  /  /_\  \ 
+  |    | |  |  /   |  \/    |    \
+  |____| |____/|___|  /\____|__  /
+                    \/         \/ 
+
+-----------------------------
+Data Management
+-----------------------------
+Select Database: sample_dblp
+Select Function Store: evalF1
+Query File: query1.sparql
+```
+
 ## Where to find the data sets used for the evaluation?
 For the evaluation we used as data sources the ones provided by [ETARA](https://github.com/anonresearcher123/ETARA) (an RDF version of dblp and data exports of the RESTful Web APIs from CrossRef, SciGraph and Semantic Scholar). Additionally, we created three tainted data sets, that contained erroneous data (i.e. incorrect titles, etc.) and removed information, e.g., titles and author names, from the dblp dataset. 
 
