@@ -16,11 +16,15 @@ To add a database or change the location of a database, you must add or modify a
 The key `label` indicates the name of the database with which it can later be selected in order to make queries to it. The path to the triple store (in this case a triple database created by Apache Jena) or index is stored under `index`. It is also possible to specify a URL leading to the SPARQL endpoint of an RDF knwoledge base. Lastly, `source` stores the path to the source file (i.e., an .nt, .ttl, or other file).
 
 ### Setting up a function store
-The configuration file `config.json` can be used to define the storage location for one or multiple sets of function definitions (also denoted as function store). In the presented example below, the path to the function store is set to `res/functionstore/`. 
+The configuration file `config.json` can be used to define the storage location for one or multiple sets of function definitions (also denoted as function store). 
 
 ```"functionstore": "res/functionstores/"```
 
-In the specified folder, several sub-folders can be created with different function definitions in order to model different function stores.
+In the presented example above, the path to the function store is set to `res/functionstore/`. In the specified folder, several sub-folders can be created (see the example below) with different function definitions in order to model different function stores.
+
+![function_defs_config](https://user-images.githubusercontent.com/120786910/210748228-89a0e146-d9d7-469b-9257-3f2a9a56ac8a.JPG)
+
+In this example, three different function stores have been defined, namely `evalF1`, `evalF2` and `evalF3`. The function stores mentioned above contain a number of different function definitions, which map an API response to a knowledge base. In this case, a function definition is a JSON file, structured like the following example:
 
 ![functionstore_config](https://user-images.githubusercontent.com/120786910/210595508-1316e0ff-ca17-4140-a951-af99de29169e.JPG)
 
