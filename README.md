@@ -42,7 +42,6 @@ In this example, three different function stores have been defined, namely `eval
   "meta": {
     "database": "databaseName",
     "api": "apiName",
-    "inputType": "https://dblp.org/rdf/schema-2020-07-01#Publication",
     "inputRelation": "http://www.wikidata.org/prop/direct/P356",
     "responseTime": 504,
     "responseProbability": 0.32
@@ -66,7 +65,9 @@ In this example, three different function stores have been defined, namely `eval
 
 ```
 
-The first section The first fields `database` and `api` describe which API is modelled and with which local database it is aligned. The fields `responseTime` and `responseProbability` describe the average response time of the API and how likely it is that information can be returned for a requested entity. The field `inputRelation` describes the relation that points to a value (in this case a DOI) that must be used to request an API. In this example, a DOI (marked with the predicate P356) must be sent to the API in order to receive a response with information (i.e., title). 
+The first section, named `meta`, contains various information about the API and the response, modelled sub-graphs of the local database. The first fields `database` and `api` describe which API is modelled and with which local database it is aligned. The fields `responseTime` and `responseProbability` describe the average response time of the API and how likely it is that information can be returned for a requested entity. The field `inputRelation` describes the relation that points to a value (in this case a DOI) that must be used to request an API. In this example, a DOI (marked with the predicate P356) must be sent to the API in order to receive a response with information (i.e. title). 
+
+The second section, named `alignments`, contains ...
 
 ### Running queries
 
