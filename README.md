@@ -11,7 +11,13 @@ All configurations of TunA are done in the config file `config.json`.
 ### Configure local databases
 To add a database or change the location of a database, you must add or modify a JSON object of the following form in the databse array in the global configuration file `config.json`:
 
-![database_config](https://user-images.githubusercontent.com/120786910/210595102-4378216a-69a7-4f48-b86b-e91dc1daa98c.JPG)
+```
+{
+  "label": "example_dataset",
+  "index": "C:\\path\\to\\tdb",
+  "source": "C:\\path\\to\\dataset.nt"
+}
+```
 
 The key `label` indicates the name of the database with which it can later be selected in order to make queries to it. The path to the triple store (in this case a triple database created by Apache Jena) or index is stored under `index`. It is also possible to specify a URL leading to the SPARQL endpoint of an RDF knwoledge base. Lastly, `source` stores the path to the source file (i.e., an .nt, .ttl, or other file).
 
