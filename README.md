@@ -44,6 +44,8 @@ The procedure is similar for APIs, because these must also be defined in the con
 
 The first two fields describe the name or label of the API. Here, the label also serves as a key and can be uniquely identified. The field `timeout` describes the time that must elapse between two requests in order to be allowed to make another request to the API. The timeout was introduced to be able to model rate limits, as APIs are often limited in the number of requests per second. The fields `format` and `url` represent the response format of the API and the URL that must be used to make requests.
 
+The field `parameters` is used to specify the parameters of a call URL, e.g, `doi={q}` is a call parameter that needs to be set to a value of a DOI in order to successfully request information. The field `name` specifies the name of the placeholder of the parameter, that will be replaced with the actual value, e.g., a DOI. The `type` and `relation` field specify the type of the entity that must provide the input value, denoted by the relation specified in the field `relation`.
+
 ### Setting up a function store
 The configuration file `config.json` can be used to define the storage location for one or multiple sets of function definitions (also denoted as function store). 
 
