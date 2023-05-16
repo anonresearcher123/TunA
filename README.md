@@ -125,4 +125,4 @@ Finally, before the query is executed, the user must specify their preferences (
 ## Where to find the data sets used for the evaluation?
 For the evaluation we used as data sources the ones provided by [ETARA](https://github.com/anonresearcher123/ETARA) (an RDF version of dblp and data exports of the RESTful Web APIs from CrossRef, SciGraph and Semantic Scholar). Additionally, we created three tainted data sets, that contained erroneous data (i.e. incorrect titles, etc.) and removed information, e.g., titles and author names, from the dblp dataset.
 
-[Download used data sets](https://www.dropbox.com/scl/fo/1t7gmh8bzbyieanacdl5a/h?dl=0&rlkey=66rejlyibvjxrb2z3hwsrji4v "Link to used datasets")
+[Download used data sets](https://tinyurl.com/iswcdata "Link to used datasets")
