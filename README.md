@@ -108,16 +108,17 @@ ___________               _____
 -----------------------------
 Data Management
 -----------------------------
-Select Database: databaseName
-Select Function Store: functionStoreName
-Query File: queryName.sparql
+Select Database: sample_dblp_gaps
+Select Function Store: evalF1
+Query Optimizer: tuna
+Query File: query.sparql
 
 -----------------------------
 User Preferences
 -----------------------------
-Time Limit (ms): 5000
-Minimum Coverage: 0.7
-Minimum Reliability: 0.8
+Time Limit (ms): 500000000.0
+Minimum Coverage: 1.0
+Minimum Reliability: 0.9
 ```
 
 Finally, before the query is executed, the user must specify their preferences (in terms of time limit, minimum required coverage, minimum required reliability). In the example above, the user has specified a maximum execution time of 5 seconds (measured in milliseconds). Furthermore, he requires a minimum coverage of 0.7 and a minimum reliability of 0.8.
