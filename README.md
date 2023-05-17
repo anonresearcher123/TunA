@@ -221,13 +221,13 @@ Next, the user can specify the TunA specific user preferences like, maximum exec
 
 ```
 -----------------------------
-Plan:
+Plan
 -----------------------------
-Est. Time: 4.027
-Crawl Time: 2.512
+Calls: 6
+Est. Time: 3.435
+Crawl Time: 1.93
 Est. Coverage: 1.0
-Est. Reliability: 0.99
-Calls: 9
+Est. Reliability: 0.96
 -----------------------------
 ```
 
